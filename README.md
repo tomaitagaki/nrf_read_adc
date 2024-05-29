@@ -1,4 +1,4 @@
-# Guide to using Nordic boards:
+# Guide to Using Nordic boards:
 
 Devboard is 'nrf5340df_nrf5340_cpuapp' [Pinout](https://devzone.nordicsemi.com/f/nordic-q-a/81286/the-pinout-of-nrf5340)
 MilliMobile is 'nrf52840dongle_nrf52840'
@@ -39,4 +39,6 @@ When your code is ready to flash hit 'Flash' under 'ACTIONS'.
 
 # Using the ADC Code
 
-The modified ADC read code can be found here.
+The modified ADC read code can be found under 'adc'. The current .overlay file for nrf5340 is set to read from 'AIN0' aka 'P0.01'.
+
+The serial output can be read from 'read_serial.py'
