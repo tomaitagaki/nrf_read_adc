@@ -39,6 +39,6 @@ When your code is ready to flash hit 'Flash' under 'ACTIONS'.
 
 # Using the ADC Code
 
-The modified ADC read code can be found under 'adc'. The current .overlay file for nrf5340 is set to read from 'AIN0' aka 'P0.01'.
+The modified ADC read code from Nordic's Tutorials can be found under 'adc'. The current .overlay file for nrf5340 is set to read from 'AIN0' aka 'P0.01'.
 
 The serial output can be read from 'read_serial.py'
