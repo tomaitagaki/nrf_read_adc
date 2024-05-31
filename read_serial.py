@@ -1,5 +1,5 @@
 import serial
-import time
+import time 
 
 ser = serial.Serial('/dev/tty.usbmodem0010500679563', 115200, timeout=1)
 robot_step_time = 150
@@ -19,14 +19,15 @@ def read_adc():
 
 
 def main():
-    filename = "data/laser_comm.csv"
+    start = time.time()
+    filename = "data/100hz_1ms.csv"
     with open(filename, "w") as file:
-        while True:
+        while (time.time() - start) < 10:
             t, v = read_adc()
-            time.sleep(robot_step_time / 1000.0)
+            # time.sleep(robot_step_time / 1000.0)
             if v is not None:
                 file.write(f"{t}, {v}\n")
-                print(t, v)
+                # print(t, v)
 
 
 if __name__ == '__main__':
