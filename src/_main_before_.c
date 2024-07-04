@@ -26,7 +26,7 @@ static bool parse_ad(struct bt_data *data, void *user_data)
                 
                 if (ad->len < len - 1) {
                     printk("Malformed advertising data: ");
-                    for (int i = 0; i < ad->len; i++) {
+                    for (int i = 0; i < ad->len; i++) { // Changed from ad->data_len to ad->len
                         printk("%02x ", ad->data[i]);
                     }
                     printk("\nlength: %d\n", len);
