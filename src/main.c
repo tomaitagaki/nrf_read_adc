@@ -7,7 +7,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define DEVICE_NAME "MilliMobile"
+#define DEVICE_NAME "MM"
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
 
 static bool parse_ad(struct bt_data *data, void *user_data)
